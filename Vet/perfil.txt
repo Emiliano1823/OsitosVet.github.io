@@ -1,0 +1,139 @@
+     <div>
+            <div class="container ">
+                <div class="row ">
+
+                    <div class="col-6 bg-light p-3 border">
+
+                        <div id="admin" class=" border  rounded-3 container-md">
+                            <div class="container text-">
+                                <div class="row align-items-start">
+                                    <div class="col">
+                                        <div>
+                                            <h1>usuario</h1>
+                                            <img src="imgenes/eres-admin.jpg" class="img-thumbnail rounded-circle"
+                                                width="100" height="100">
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-outline-primary">
+                                                <i class="bi bi-image-fill"> Agregar imagen</i>
+                                            </button>
+                                        </div>
+                                        <div class="mb-3" >
+                                            <label for="NombrePerfil">Nombre</label>
+                                            <input class="form-control" type="text" id="NombrePerfil" placeholder="Nombre">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="">Apellidos</label>
+                                            <input type="text" id="ApellidosPerfil" class="form-control" placeholder="Apellidos">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="p-3">
+                                            <label for="CorreoPerfil">Correo</label>
+                                            <input type="email" id="CorreoPerfil" class="form-control" placeholder="exaple@gmail.com">
+                                        </div>
+                                        <div class="p-3">
+                                            <label for="PassPerfil">Contraseña</label>
+                                            <input type="password" id="PassPerfil" class="form-control" placeholder="***********">
+                                        </div>
+                                        <div class="p-3">
+                                            <label for="RolPerfil">Mi Rol</label>
+                                            <input type="text" id="RolPerfil" class="form-control" placeholder="Rol">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-9 bg-light p-3 border">
+                        <div id="usuario" class="text-center">
+                            <h1>Eres Usuario</h1>
+                            <img src="imgenes/usuario-_-.jpg" class="img-thumbnail" width="200" height="200" id="fotoUsu">
+                        </div>
+                    </div>
+                
+                
+                </div>
+            </div>
+
+        </div>
+
+<div class="col bg-light p-3 border">
+                        <div id="veterinario">
+                            <div>
+                                <h1>Citas por atender</h1>
+                            </div>
+                            <!-- 1 -->
+                            <div class="border">
+                                <label>fecha: 25/11/2022</label>
+                                <label>Paciente: "Odie"</label>
+                                <label>Dueño: Juan Carlos Bodoque</label><br>
+                                <label>Horario: 12:00</label>
+                            </div>
+                            <!-- 2 -->
+                            <div class="border">
+                                <label>fecha: 25/11/2022</label>
+                                <label>Paciente: "Marley" </label>
+                                <label>Dueño: Juji Itadori</label><br>
+                                <label>Horario: 14:00</label>
+                            </div>
+                            <!-- 3 -->
+                            <div class="border">
+                                <label>fecha: 25/12/2022</label>
+                                <label>Paciente: "Pochiya"</label><br>
+                                <label>Dueño: "Denji"</label><br>
+                                <label>Horario: 16:00</label>
+                            </div>
+                            <!-- 4 -->
+                            <div class="border">
+                                <label>fecha: 25/12/2022</label><br>
+                                <label>Paciente: "Nina"</label>
+                                <label>Dueño: Shou Trucker </label>
+                                <label>Horario: 18:00</label>
+                            </div>
+                            <!-- 5 -->
+                            <div class="border">
+                                <label>fecha: 25/12/2022</label>
+                                <label>Paciente: Scalibur</label>
+                                <label>Dueño Art</label><br>
+                                <label>Horario: 16:00</label>
+                            </div>
+                            <!-- 6 -->
+                            <div class="border">
+                                <label>fecha: 25/12/2022</label>
+                                <label>Paciente: Juan Carlos Bodoque</label>
+                                <label>Dueño "Odie"</label><br>
+                                <label>Horario: 16:00</label>
+                            </div>
+                            <!-- 7 -->
+                            <div class="border">
+                                <label>fecha: 25/12/2022</label>
+                                <label>Paciente: Juan Carlos Bodoque</label>
+                                <label>Dueño "Odie"</label><br>
+                                <label>Horario: 16:00</label>
+                            </div>
+                            <!-- 8 -->
+                            <div class="border">
+                                <label>fecha: 25/12/2022</label>
+                                <label>Paciente: Juan Carlos Bodoque</label>
+                                <label>Dueño "Odie"</label><br>
+                                <label>Horario: 16:00</label>
+                            </div>
+                            <!-- 9 -->
+                            <div class="border">
+                                <label>fecha: 25/12/2022</label>
+                                <label>Paciente: Juan Carlos Bodoque</label>
+                                <label>Dueño "Odie"</label><br>
+                                <label>Horario: 16:00</label>
+                            </div>
+                            <!-- 10 -->
+                            <div class="border">
+                                <label>fecha: 25/12/2022</label>
+                                <label>Paciente: Juan Carlos Bodoque</label>
+                                <label>Dueño "Odie"</label><br>
+                                <label>Horario: 16:00</label>
+                            </div>
+                            
+                        </div>
+                    </div>

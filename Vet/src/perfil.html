@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ositos - Mi Perfil</title>
+    <link rel="icon" href="imgenes/img7.png" type="image/x-icon">
+    <!--Estilos de bootstrap-->
+    <link rel="stylesheet" href="./scss/Estilos.css">
+    <!--Archivo main de JavaScrip-->
+    <script src="./ManejoPerfil/perfil.js" type="module"></script>
+    <!--Estilos de Toastify Js-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--Estilos personalizados de CSS-->
+    <link rel="stylesheet" href="./main.css">
+    <!--Paquete de iconos de Bootstrap :)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+
+    <style>
+        /*Estos metodos sirven para desactivar los eleentos en la pantalla, los puse bajo su id para que asi llamarlos en el css
+        yo lo tengo en el principal dado que modifique el sass de bootstrap y me da errores si importo otro css*/
+
+        #UsuarioPerfil {
+            display: none;
+        }
+
+        #CitasPerfil {
+            display: none;
+        }
+
+        #MascotasPerfil {
+            display: none;
+        }
+
+        #ProgramarcPerfil {
+            display: none;
+        }
+
+        #UsuariosPerfil {
+            display: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--navbar de la pagina de perfil-->
+    <!--Esta se crea de nuevo dado que no se puede exportar solo el navbar de la pagina principal, pero esto nos permite un mejor manejo para 
+    el scrip de la pagina-->
+    <form>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imgenes/img7.png" width="30" height="auto" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="logoutP">Cerrar Sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Este apartado es donde estan el contenido de los usuarios, solo tiene un titulo y una foto dado que aun no 
+            he empezado a utilizar mas elementos, pero con esto si les puede servir si quieren agregarle más,
+        
+            de todos modos si necesitan ayuda o no les sale me dicen :D
+        
+            checas bien los id de cada div interno dado que estos son los que se desactivan -->
+        <p></p>
+        <form id="Roles">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9" id="UsuarioPerfil">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <div>
+                                        <h1>Mi perfil</h1>
+                                        <center>
+                                            <img src="imgenes/fotoPerfil.jpg"
+                                            class="img-thumbnail rounded-circle align-items-center" width="100"
+                                            height="100" id="imagenPerfil">
+                                        </center>
+                                    </div>
+                                    <div>
+                                        <p></p>
+                                        <button class="btn btn-outline-dark w-100">
+                                            <i class="bi bi-image-fill"> Agregar imagen</i>
+                                        </button>
+                                        <p></p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="NombrePerfil">Nombre</label>
+                                        <input class="form-control" disabled="" type="text" id="NombrePerfil"
+                                            placeholder="Nombre">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="">Telefono</label>
+                                        <input type="text" id="ApellidosPerfil" disabled="" class="form-control"
+                                            placeholder="Apellidos">
+                                    </div>
+                                </div>
+
+                                <div class="p-3">
+                                    <label for="CorreoPerfil">Correo</label>
+                                    <input type="email" id="CorreoPerfil" disabled="" class="form-control"
+                                        placeholder="exaple@gmail.com">
+                                </div>
+                                <div class="p-3">
+                                    <label for="RolPerfil">Mi Rol</label>
+                                    <input type="text" id="RolPerfil" class="form-control" disabled=""
+                                        placeholder="Rol">
+                                </div>
+                                <div class="p-3">
+                                    <a class="btn btn-outline-dark w-100" href="EdicionPerfil.html" role="button">Editar
+                                        Usuario</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 " id="CitasPerfil">
+                        <h1>Citas</h1>
+                        <div class="border">
+                            <label>fecha: 25/11/2022</label>
+                            <label>Paciente: "Horacio"</label>
+                            <label>Dueño: Diego Jared</label><br>
+                            <label>Horario: 12:00</label>
+                            <p></p>
+                        </div>
+                        <div class="border">
+                            <label>fecha: 25/12/2022</label>
+                            <label>Paciente: "Francisca"</label><br>
+                            <label>Dueño: "Mauricio Viñeda"</label><br>
+                            <label>Horario: 16:00</label>
+                            <p></p>
+                        </div>
+                        <div class="border">
+                            <label>fecha: 25/12/2022</label><br>
+                            <label>Paciente: "Negra"</label>
+                            <label>Dueño: Jorge Nitales </label>
+                            <label>Horario: 18:00</label>
+                        </div>
+                    </div>
+                </div>
+                <p></p>
+                <div class="container" id="MascotasPerfil">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Mis mascotas </h1>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="imgenes/img8.jpg" class="img-thumbnail rounded-circle" width="100"
+                                            height="100">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="imgenes/Perrito3R.jpg" class="img-thumbnail rounded-circle" width="100"
+                                            height="100">
+                                    </div>
+                                    <div class="col-sm-4 mb-3">
+                                        <img src="imgenes/img9R.jpg" class="img-thumbnail rounded-circle" width="100"
+                                            height="100">
+                                    </div>
+                                </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-outline-dark">Agregar Mascota</button> <br>
+                                    <button class="btn btn-outline-danger">Eliminar Mascota</button> <br>
+                                </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-outline-dark"><a class="nav-link logged-out" href="#"
+                                            data-bs-toggle="modal" data-bs-target="#registrarMascota">Agendar Cita</a></button>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </form>
+        <p></p>
+        <!-- Modal Agendar Cita-->
+        <div class="modal fade" id="registrarMascota" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="loginForm">
+                            <div class="container" id="ProgramarcPerfil">
+                                <div class="row">
+                                    <div class="col">
+                                        <h1 class="text-white">Agendar Cita</h1>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label class="text-white" for="MascotaAge">Mascota</label>
+                                                        <input type="text" class="form-control" id="MascotaAge"
+                                                            placeholder="Nombre de tu mascota">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="text-white" for="Fecha">Fecha de la cita</label>
+                                                        <input type="date" class="form-control" id="Fecha">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="text-white" for="Raza">Ingresa su Raza</label>
+                                                        <input type="text" class="form-control" id="Fecha"
+                                                            placeholder="Ingresa su Raza">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label class="text-white" for="">Motivo de la consulta</label>
+                                                        <textarea class="form-control" id="" cols="30"
+                                                            rows="10"></textarea>
+                                                    </div> <br>
+                                                    <div class="mb-3 d-grid">
+                                                        <button class="btn btn-outline-light">Agendar cita</button>
+                                                    </div> <br>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="UsuariosPerfil">
+            <div class="row">
+                <div class="col border mb-3">
+                    <h1>Usuarios registrados en la base de datos</h1>
+                    <p>En proceso...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <!-- Footer de la pagina queda mamalom :D  
+    <div class="container-fluid position-absolute top-100 start-auto">
+
+        <div class="row p-5 pb-2 w-auto bg-dark text-white align-items-end">
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3 mb-3">Gatitos Felices</p>
+                <img src="./imgenes/1664076659728.png" width="200" height="auto">
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3 ">Contacto directo</p>
+                <div class="mb-2">
+                    <a href="#" class="text-secondary text-decoration-none">numero de telefono</a>
+                </div>
+                <div class="mb-2">
+                    <a href="#" class="text-secondary text-decoration-none">Correo Electronico</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Links</p>
+                <div class="mb-2">
+                    <a href="#" class="text-secondary text-decoration-none">Terminos & Condiciones</a>
+                </div>
+                <div class="mb-2">
+                    <a href="#" class="text-secondary text-decoration-none">Politicas de Privacidad</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Redes sociales</p>
+                <div class="mb-2">
+                    <a href="#" class="text-secondary text-decoration-none">Instagram</a>
+                </div>
+                <div class="mb-2">
+                    <a href="#" class="text-secondary text-decoration-none">Facebook</a>
+                </div>
+                <div class="mb-2">
+                    <a href="https://twitter.com/?lang=es" class="text-secondary text-decoration-none">Twitter</a>
+                </div>
+            </div>
+            <div class="col-xs-12 pt-3">
+                <p class="text-secondary text-center">Copyright - all rights reserved © 2022</p>
+            </div>
+        </div> -->
+
+        </div>
+    </form>
+
+    <!--Scrip de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Scrip de Toastify-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
